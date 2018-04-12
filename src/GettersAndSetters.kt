@@ -1,7 +1,8 @@
 /*
     https://blog.kotlin-academy.com/kotlin-programmer-dictionary-field-vs-property-30ab7ef70531
 
-
+    https://kotlinlang.org/docs/reference/properties.html
+    
     This is an example of a Java field:
         public String name = "Marcin";
     Here is an example of a Kotlin property:
