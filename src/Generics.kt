@@ -30,7 +30,7 @@ fun main(args:Array<String>) {
     var count = Counter<String> ("5")
     count.printCount()
 
-    var count1 = Counter("5") // "5" has type String, so the compiler figures out that we are talking about Counter<String>
+    var count1 = Counter("5") // "5" has type String, so the compiler figures out that we are talking about com.example.yair.Counter<String>
     count1.printCount()
 
 
