@@ -25,6 +25,11 @@ A companion object is not part of an instance of a class. You can't access membe
 Instead, don't use a companion object:
  */
 fun main(args: Array<String>){
+    val p1 = Pupil("aaa")
+    val p2 = Pupil("bbb")
+    val p3 = Pupil("ccc")
+    println("Pupils: ${Pupil.howMany()}")
+
     PersonA.myName = "yair"
     PersonA.callMe()
     Test.hashCode()
@@ -41,6 +46,20 @@ class PersonA (var name:String="yair") {
     companion object {
         var myName:String = "aaa"
         fun callMe() = println("I'm called. - $myName")
+    }
+}
+
+class Pupil (var name:String="yair") {
+    init {
+        count()
+    }
+    // name of the companion object is omitted
+    companion object {
+        private var counter: Int = 0
+        private fun count() = counter++
+        fun howMany(): Int {
+            return counter
+        }
     }
 }
 

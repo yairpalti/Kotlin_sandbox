@@ -1,9 +1,11 @@
-class Car(type:String) {
+class Car(var type:String) {
 
     init {
 //        type = "ff"  //val can't be assigned
         println ("Car is created: $type")
     }
+    constructor(car: Car) : this(car.type) // copy constructor
+
 }
 
 class House(var street:String?=null, var number:Int, var city:String) {
@@ -38,6 +40,7 @@ class Building() {
 fun main(args:Array<String>) {
     val firstCar = Car("AAA")
     val secondCar = Car("BBB")
+    val thirdCar = Car(firstCar) // copy constructor
     val myHouse = House("abc", 4, "Paris")
     val myHouse2 = House( number=4, city="Paris")
     println("house: ${myHouse.street} ${myHouse.number} ${myHouse.city}")
