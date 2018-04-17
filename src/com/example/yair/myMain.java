@@ -7,5 +7,8 @@ public final class myMain {
         new PupilJava("ccc");
         String var4 = "Pupils: " + PupilJava.howMany();
         System.out.println(var4);
+
+        SomeSingletonJava.display();
+//        SomeSingletonJava someSingletonJava = SomeSingletonJava.INSTANCE;
     }
 }

@@ -1,5 +1,14 @@
 package com.example.yair
+object SomeSingleton {
+    init {
+        println("init complete")
+    }
+}
+
 object Counter  {
+    init {
+        println("init complete")
+    }
    var count:Int=0
     fun plus() {
         count++
