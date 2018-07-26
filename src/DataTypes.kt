@@ -7,7 +7,7 @@ fun main(args:Array<String>) {
     var ddd:Int?
     age = null
     ddd = null
-//    name = null
+    //name = null
     age = name?.toInt()
 
     if (ddd == null) {
@@ -15,11 +15,13 @@ fun main(args:Array<String>) {
         var yy = name?.length ?: 0
         var rr = name?: 0
         println (x)
-        println (yy)
+        println("yy: $yy")
         println ("name: " + rr + "\n")
         println ("name2: " + name ?: 0)
         println (age)
     }
+
+
     var n1:Float =  readLine()!!.toFloat()
     println ()
     var n2 =  readLine()!!.toFloat();
